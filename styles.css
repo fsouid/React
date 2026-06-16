@@ -23,6 +23,14 @@ a {
     margin: 0 auto;
 }
 
+.purple {
+    color: #6415ff;
+}
+
+section {
+    padding: 0 32px;
+}
+
 /* NAVBAR */
 
 nav {
