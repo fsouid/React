@@ -18,6 +18,7 @@ h1 {
     line-height: 1.25;
 }
 
+
 a {
     display: inline;
     text-decoration: none;
@@ -47,11 +48,32 @@ img {
     color: #6415ff;
 }
 
+.btn {
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms ease;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.btn:hover {
+    background-color: #5011cc;
+}
+
 section {
     padding: 0 32px;
 }
 
-/* NAVBAR */
+/* 
+
+NAVBAR 
+
+*/
 
 nav {
     display: flex;
@@ -149,7 +171,11 @@ nav {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
-/* HEADER */
+/* 
+
+HEADER 
+
+*/
 
 .header__row {
     display: flex;
@@ -224,4 +250,227 @@ nav {
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms ease;
+    cursor: pointer;
 }
+
+.header__email--btn:hover {
+    background-color: #5011cc;
+}
+
+/* 
+
+FEATURES 
+
+*/
+
+.row__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section__tag {
+    font-size: 16px;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #243e63;
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
+
+.section__para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
+    max-width: 576px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    width: calc(100%/3);
+}
+
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
+}
+
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__text {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.feature__para {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: calc(634px / 3);
+    color: #7c8ba1;
+    line-height: 2;
+    font-weight: 500;
+}
+
+/*
+
+QUALITY
+
+*/
+
+.row__quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality__section--title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #243e63;
+    line-height: 1.25;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
+
+.quality__description {
+    width: 50%;
+    max-width: 576px;
+    margin-right: 64px;
+}
+
+.quality__img--wrapper {
+    display: flex;
+    border: 1px solid #e5e7eb;
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;
+    width: 50%;
+}
+
+.quality__img {
+    z-index: 1;
+}
+
+.quality__grid {
+    display: block;
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: #6415ff;
+    --tw-text-opacity: 1;
+    color: #6415ff var(--tw-text-opacity);
+    z-index: 0;
+}
+
+/*
+
+STEPS
+
+*/
+
+.row__steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps__description,
+.steps__img--wrapper {
+    width: 50%;
+}
+
+.steps__img--wrapper {
+    display: flex;
+    position: relative;
+}
+
+.steps__grid {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.1;
+    z-index: -10;
+    color: #6415ff;
+    fill: #6415ff ;
+}
+
+.steps__description {
+    padding:  32px 0;
+    padding-left: 64px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/*
+
+VALUES
+
+*/
+
