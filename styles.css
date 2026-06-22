@@ -75,7 +75,6 @@ img {
     color: #7c8ba1;
     line-height: 1.625;
     max-width: 576px;
-    text-align: center;
 }
 
 .purple {
@@ -211,10 +210,10 @@ HEADER
 
 */
 
-.header__row {
+#header .row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header__description {
@@ -231,7 +230,7 @@ HEADER
 }
 
 .header__img--wrapper {
-    width: 60%;
+    width: calc(100% - 40%);
 }
 
 .header__customers {
@@ -297,8 +296,6 @@ FEATURES
 
 */
 
-
-
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -332,6 +329,11 @@ FEATURES
     margin-left: 16px;
 }
 
+#features .section__para {
+    text-align: center;
+    max-width: 576px;
+}
+
 .feature__para {
     margin-top: 16px;
     font-size: 16px;
@@ -347,13 +349,13 @@ QUALITY
 
 */
 
-.row__quality {
+#row .quality {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.quality__section--title {
+#quality .section__title {
     font-size: 48px;
     font-weight: 900;
     color: #243e63;
@@ -401,7 +403,7 @@ STEPS
 
 */
 
-.row__steps {
+#row .steps {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -491,22 +493,10 @@ VALUES
     padding: 32px 64px 32px 0;
 }
 
-.values__section--title {
+#values .section__title {
     margin-top: 16px;
     margin-bottom: 32px;
-    line-height: 1.25;    
-    font-size: 48px;
-    font-weight: 900;
-    color: #243e63;
-    letter-spacing: 0.025em;
-}
-
-.values__section--para {
-    font-size: 18px;
-    font-weight: 500;
-    color: #7c8ba1;
-    line-height: 1.625;
-    max-width: 576px;
+    line-height: 1.25;
 }
 
 .values__list {
@@ -514,7 +504,7 @@ VALUES
     margin-right: 0px;
     display: flex;
     max-width: none;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .value {
